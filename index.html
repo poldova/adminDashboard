@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 36 36"
+            width="36"
+            height="36"
+          >
+            <path
+              d="M28.5 7.5v3h-6v-3zm-15 0v9h-6v-9zm15 12v9h-6v-9zm-15 6v3h-6v-3zm18-21h-12v9h12zm-15 0h-12v15h12zm15 12h-12v15h12zm-15 6h-12v9h12z"
+            />
+          </svg>
+          <span>Dashboard</span>
+        </div>
+        <div class="searchbar">
+          <form action="" method="post" class="search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search and discover"
+            />
+            <button type="submit" class="btn">
+              <svg
+                viewBox="0 0 24 24"
+                style="width: 1.5rem; height: 1.5rem"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"
+                  style="fill: currentColor"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="userinfo">
+          <div class="note">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2V5a2 2 0 0 0-2-2m0 16H5V9h14zM5 7V5h14v2zm5.56 10.46 5.94-5.93-1.07-1.06-4.87 4.87-2.11-2.11-1.06 1.06z"
+              />
+            </svg>
+          </div>
+          <div class="notification">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M19 17v-5.2c-.5.1-1 .2-1.5.2H17v6H7v-7c0-2.8 2.2-5 5-5 .1-1.3.7-2.4 1.5-3.3-.3-.4-.9-.7-1.5-.7-1.1 0-2 .9-2 2v.3C7 5.2 5 7.9 5 11v6l-2 2v1h18v-1zm-9 4c0 1.1.9 2 2 2s2-.9 2-2zM21 6.5c0 1.9-1.6 3.5-3.5 3.5S14 8.4 14 6.5 15.6 3 17.5 3 21 4.6 21 6.5"
+              />
+            </svg>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 7c2.67 0 8 1.33 8 4v3H4v-3c0-2.67 5.33-4 8-4m0 1.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="nav">
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81zM12 3 2 12h3v8h6v-6h2v6h6v-8h3"
+                />
+              </svg>
+              <span>Home</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m20.84 2.18-3.93.78 2.74 3.54 1.97-.4zm-6.87 1.36L12 3.93l2.75 3.53 1.96-.39zm-4.9.96-1.97.41 2.75 3.53 1.96-.39zm-4.91 1-.98.19a1.995 1.995 0 0 0-1.57 2.35L2 10l4.9-.97zM20 12v8H4v-8zm2-2H2v10a2 2 0 0 0 2 2h16c1.11 0 2-.89 2-2z"
+                />
+              </svg>
+              <span>Movie</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m10 11-.94 2.06L7 14l2.06.94L10 17l.94-2.06L13 14l-2.06-.94M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.09 0-2 .9-2 2v12c0 1.1.91 2 2 2h16a2 2 0 0 0 2-2V4zm2 14H4V6.47L5.77 10H16l-.63 1.37L14 12l1.37.63L16 14l.63-1.37L18 12l-1.37-.63L16 10h4z"
+                />
+              </svg>
+              <span>Tv-Show</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M20 5v14H4V5zm0-2H4c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2m-2 12H6v2h12zm-8-8H6v6h4zm2 2h6V7h-6zm6 2h-6v2h6z"
+                />
+              </svg>
+              <span>Article</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2zm-7.2 2 1.2-1.2V4h4v8.8l1.2 1.2z"
+                />
+              </svg>
+              <span>Pined</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M15 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9zm4 16H5V5h9v5h5m-2 4H7v-2h10m-3 5H7v-2h7"
+                />
+              </svg>
+              <span>Note</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 23a1 1 0 0 1-1-1v-3H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4.1l-3.7 3.71c-.2.18-.44.29-.7.29zm1-6v3.08L16.08 17H21V7H7v10zM3 15H1V3a2 2 0 0 1 2-2h16v2H3zm6-6h10v2H9zm0 4h8v2H9z"
+                />
+              </svg>
+              <span>Comments</span>
+            </li>
+          </ul>
+        </div>
+        <div class="chart">
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path d="M3 22V8h4v14zm7 0V2h4v20zm7 0v-8h4v8z" />
+              </svg>
+              <span>Analitycs</span>
+            </li>
+          </ul>
+        </div>
+        <div class="management">
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M13.07 10.41a5 5 0 0 0 0-5.82A3.4 3.4 0 0 1 15 4a3.5 3.5 0 0 1 0 7 3.4 3.4 0 0 1-1.93-.59M5.5 7.5A3.5 3.5 0 1 1 9 11a3.5 3.5 0 0 1-3.5-3.5m2 0A1.5 1.5 0 1 0 9 6a1.5 1.5 0 0 0-1.5 1.5M16 17v2H2v-2s0-4 7-4 7 4 7 4m-2 0c-.14-.78-1.33-2-5-2s-4.93 1.31-5 2m11.95-4A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4Z"
+                />
+              </svg>
+              <span>Users</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M4 4a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2 2 2 0 0 1-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 1-2-2 2 2 0 0 1 2-2V6a2 2 0 0 0-2-2zm0 2h16v2.54c-1.24.71-2 2.03-2 3.46s.76 2.75 2 3.46V18H4v-2.54c1.24-.71 2-2.03 2-3.46s-.76-2.75-2-3.46z"
+                />
+              </svg>
+              <span>Tickets</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"
+                />
+              </svg>
+              <span>Settings</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="announ">
+          <div class="topbar">
+            <h2 class="title">last Comments</h2>
+            <a href="#" class="see">See more</a>
+          </div>
+          <div class="col">
+            <div class="item">
+              <div class="comment">
+                <div class="writer">Michael Scofield</div>
+                <span
+                  >I choose to have faith, because, without that, I have
+                  nothing.</span
+                >
+              </div>
+              <div class="ctr">
+                <div class="censor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M15.465 1.5c2.513 4.208-6.113 13.612-6.113 13.612L7.2 12.96 3.683 16.5l-1.605-1.605z"
+                    />
+                  </svg>
+                  Censor
+                </div>
+                <div class="delete">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M6.75 2.25V3H3v1.5h.75v9.75a1.5 1.5 0 0 0 1.5 1.5h7.5a1.5 1.5 0 0 0 1.5-1.5V4.5H15V3h-3.75v-.75zM5.25 4.5h7.5v9.75h-7.5zM6.75 6v6.75h1.5V6zm3 0v6.75h1.5V6z"
+                    />
+                  </svg>
+                  Delete
+                </div>
+                <div class="reply">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M6 7.35v.675l1.275.225c1.95.3 3.375 1.05 4.425 2.025a14.6 14.6 0 0 0-4.2-.6H6v.975L4.35 9zm1.5-3.6L2.25 9l5.25 5.25v-3.075c3.75 0 6.375 1.2 8.25 3.825-.75-3.75-3-7.5-8.25-8.25"
+                    />
+                  </svg>
+                  Reply
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="comment">
+                <div class="writer">Theodore Bagwell</div>
+                <span
+                  >“We are captives of our own identities, living in prisons of
+                  our own creation.”</span
+                >
+              </div>
+              <div class="ctr">
+                <div class="censor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M15.465 1.5c2.513 4.208-6.113 13.612-6.113 13.612L7.2 12.96 3.683 16.5l-1.605-1.605z"
+                    />
+                  </svg>
+                  Censor
+                </div>
+                <div class="delete">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M6.75 2.25V3H3v1.5h.75v9.75a1.5 1.5 0 0 0 1.5 1.5h7.5a1.5 1.5 0 0 0 1.5-1.5V4.5H15V3h-3.75v-.75zM5.25 4.5h7.5v9.75h-7.5zM6.75 6v6.75h1.5V6zm3 0v6.75h1.5V6z"
+                    />
+                  </svg>
+                  Delete
+                </div>
+                <div class="reply">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M6 7.35v.675l1.275.225c1.95.3 3.375 1.05 4.425 2.025a14.6 14.6 0 0 0-4.2-.6H6v.975L4.35 9zm1.5-3.6L2.25 9l5.25 5.25v-3.075c3.75 0 6.375 1.2 8.25 3.825-.75-3.75-3-7.5-8.25-8.25"
+                    />
+                  </svg>
+                  Reply
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="comment">
+                <div class="writer">Sara Tancredi</div>
+                <span
+                  >“I don’t like getting attached to things if I know they won’t
+                  last.”</span
+                >
+              </div>
+              <div class="ctr">
+                <div class="censor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M15.465 1.5c2.513 4.208-6.113 13.612-6.113 13.612L7.2 12.96 3.683 16.5l-1.605-1.605z"
+                    />
+                  </svg>
+                  Censor
+                </div>
+                <div class="delete">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M6.75 2.25V3H3v1.5h.75v9.75a1.5 1.5 0 0 0 1.5 1.5h7.5a1.5 1.5 0 0 0 1.5-1.5V4.5H15V3h-3.75v-.75zM5.25 4.5h7.5v9.75h-7.5zM6.75 6v6.75h1.5V6zm3 0v6.75h1.5V6z"
+                    />
+                  </svg>
+                  Delete
+                </div>
+                <div class="reply">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M6 7.35v.675l1.275.225c1.95.3 3.375 1.05 4.425 2.025a14.6 14.6 0 0 0-4.2-.6H6v.975L4.35 9zm1.5-3.6L2.25 9l5.25 5.25v-3.075c3.75 0 6.375 1.2 8.25 3.825-.75-3.75-3-7.5-8.25-8.25"
+                    />
+                  </svg>
+                  Reply
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="comment">
+                <div class="writer">John Abruzzi</div>
+                <span>“I kneel only to god. I don’t see him here.”</span>
+              </div>
+              <div class="ctr">
+                <div class="censor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M15.465 1.5c2.513 4.208-6.113 13.612-6.113 13.612L7.2 12.96 3.683 16.5l-1.605-1.605z"
+                    />
+                  </svg>
+                  Censor
+                </div>
+                <div class="delete">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M6.75 2.25V3H3v1.5h.75v9.75a1.5 1.5 0 0 0 1.5 1.5h7.5a1.5 1.5 0 0 0 1.5-1.5V4.5H15V3h-3.75v-.75zM5.25 4.5h7.5v9.75h-7.5zM6.75 6v6.75h1.5V6zm3 0v6.75h1.5V6z"
+                    />
+                  </svg>
+                  Delete
+                </div>
+                <div class="reply">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 18 18"
+                    width="18"
+                    height="18"
+                  >
+                    <path
+                      d="M6 7.35v.675l1.275.225c1.95.3 3.375 1.05 4.425 2.025a14.6 14.6 0 0 0-4.2-.6H6v.975L4.35 9zm1.5-3.6L2.25 9l5.25 5.25v-3.075c3.75 0 6.375 1.2 8.25 3.825-.75-3.75-3-7.5-8.25-8.25"
+                    />
+                  </svg>
+                  Reply
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="announ">
+          <div class="topbar">
+            <h2 class="title">last Projects</h2>
+            <a href="#" class="see">See more</a>
+          </div>
+          <div class="row">
+            <div class="name">NAME</div>
+            <div class="stat">STATUS</div>
+            <div class="author">AUTHOR</div>
+            <div class="view">VIEWS</div>
+            <div class="date">DATE</div>
+            <div></div>
+          </div>
+          <div class="items">
+            <div class="name">
+              <input type="checkbox" id="id-1" />
+              <label for="id-1">Less Cool Project</label>
+            </div>
+            <div class="stat">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41z"
+                />
+              </svg>
+              Approved
+            </div>
+            <div class="author">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M9 10H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2 -7h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2V5a2 2 0 0 0 -2 -2m0 16H5V8h14z"
+                />
+              </svg>
+              poldova
+            </div>
+            <div class="view">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v12h7V6zm16 12V6h-1.24c.24.54.19 1.07.19 1.13-.07.67-.54 1.37-.71 1.62l-2.33 2.55 3.32-.02.01 1.22-5.2-.03-.04-1s3.05-3.23 3.2-3.52c.14-.28.71-1.95-.7-1.95-1.23.05-1.09 1.3-1.09 1.3l-1.54.01s.01-.66.38-1.31H13v12h2.58l-.01-.86.97-.01s.91-.16.92-1.05c.04-1-.81-1-.96-1-.13 0-1.07.05-1.07.87h-1.52s.04-2.06 2.59-2.06c2.6 0 2.46 2.02 2.46 2.02s.04 1.25-1.11 1.72l.52.37zM8.92 16h-1.5v-5.8l-1.8.56V9.53l3.14-1.12h.16z"
+                />
+              </svg>
+              125
+            </div>
+            <div class="date">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 20c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m.5 5v6H7v-1.5h4V7z"
+                />
+              </svg>
+              2024/11/05
+            </div>
+            <div class="edit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m15.84 10.2-1.01 1.01-2.07-2.03 1.01-1.02c.2-.21.54-.22.78 0l1.29 1.25c.21.21.22.55 0 .79M8 13.91l4.17-4.19 2.07 2.08-4.16 4.2H8zM13 2v2c4.39.54 7.5 4.53 6.96 8.92A8.014 8.014 0 0 1 13 19.88v2c5.5-.6 9.45-5.54 8.85-11.03C21.33 6.19 17.66 2.5 13 2m-2 0c-1.96.18-3.81.95-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68v-2M4.26 5.67A9.8 9.8 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8 8 0 0 1 4.06 13zm5 5.37-1.39 1.37A10 10 0 0 0 11 22v-2a8 8 0 0 1-3.9-1.63z"
+                />
+              </svg>
+              Edit
+            </div>
+          </div>
+          <div class="items">
+            <div class="name">
+              <input type="checkbox" id="id-2" />
+              <label for="id-2">Impossible App</label>
+            </div>
+            <div class="stat">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41z"
+                />
+              </svg>
+              Approved
+            </div>
+            <div class="author">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M9 10H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2 -7h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2V5a2 2 0 0 0 -2 -2m0 16H5V8h14z"
+                />
+              </svg>
+              poldova
+            </div>
+            <div class="view">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v12h7V6zm16 12V6h-1.24c.24.54.19 1.07.19 1.13-.07.67-.54 1.37-.71 1.62l-2.33 2.55 3.32-.02.01 1.22-5.2-.03-.04-1s3.05-3.23 3.2-3.52c.14-.28.71-1.95-.7-1.95-1.23.05-1.09 1.3-1.09 1.3l-1.54.01s.01-.66.38-1.31H13v12h2.58l-.01-.86.97-.01s.91-.16.92-1.05c.04-1-.81-1-.96-1-.13 0-1.07.05-1.07.87h-1.52s.04-2.06 2.59-2.06c2.6 0 2.46 2.02 2.46 2.02s.04 1.25-1.11 1.72l.52.37zM8.92 16h-1.5v-5.8l-1.8.56V9.53l3.14-1.12h.16z"
+                />
+              </svg>
+              44
+            </div>
+            <div class="date">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 20c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m.5 5v6H7v-1.5h4V7z"
+                />
+              </svg>
+              2024/11/05
+            </div>
+            <div class="edit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m15.84 10.2-1.01 1.01-2.07-2.03 1.01-1.02c.2-.21.54-.22.78 0l1.29 1.25c.21.21.22.55 0 .79M8 13.91l4.17-4.19 2.07 2.08-4.16 4.2H8zM13 2v2c4.39.54 7.5 4.53 6.96 8.92A8.014 8.014 0 0 1 13 19.88v2c5.5-.6 9.45-5.54 8.85-11.03C21.33 6.19 17.66 2.5 13 2m-2 0c-1.96.18-3.81.95-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68v-2M4.26 5.67A9.8 9.8 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8 8 0 0 1 4.06 13zm5 5.37-1.39 1.37A10 10 0 0 0 11 22v-2a8 8 0 0 1-3.9-1.63z"
+                />
+              </svg>
+              Edit
+            </div>
+          </div>
+          <div class="items">
+            <div class="name">
+              <input type="checkbox" id="id-3" />
+              <label for="id-3">Easy Peasy App</label>
+            </div>
+            <div class="stat">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41z"
+                />
+              </svg>
+              Approved
+            </div>
+            <div class="author">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M9 10H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2 -7h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2V5a2 2 0 0 0 -2 -2m0 16H5V8h14z"
+                />
+              </svg>
+              poldova
+            </div>
+            <div class="view">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v12h7V6zm16 12V6h-1.24c.24.54.19 1.07.19 1.13-.07.67-.54 1.37-.71 1.62l-2.33 2.55 3.32-.02.01 1.22-5.2-.03-.04-1s3.05-3.23 3.2-3.52c.14-.28.71-1.95-.7-1.95-1.23.05-1.09 1.3-1.09 1.3l-1.54.01s.01-.66.38-1.31H13v12h2.58l-.01-.86.97-.01s.91-.16.92-1.05c.04-1-.81-1-.96-1-.13 0-1.07.05-1.07.87h-1.52s.04-2.06 2.59-2.06c2.6 0 2.46 2.02 2.46 2.02s.04 1.25-1.11 1.72l.52.37zM8.92 16h-1.5v-5.8l-1.8.56V9.53l3.14-1.12h.16z"
+                />
+              </svg>
+              5
+            </div>
+            <div class="date">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 20c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m.5 5v6H7v-1.5h4V7z"
+                />
+              </svg>
+              2024/11/05
+            </div>
+            <div class="edit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m15.84 10.2-1.01 1.01-2.07-2.03 1.01-1.02c.2-.21.54-.22.78 0l1.29 1.25c.21.21.22.55 0 .79M8 13.91l4.17-4.19 2.07 2.08-4.16 4.2H8zM13 2v2c4.39.54 7.5 4.53 6.96 8.92A8.014 8.014 0 0 1 13 19.88v2c5.5-.6 9.45-5.54 8.85-11.03C21.33 6.19 17.66 2.5 13 2m-2 0c-1.96.18-3.81.95-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68v-2M4.26 5.67A9.8 9.8 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8 8 0 0 1 4.06 13zm5 5.37-1.39 1.37A10 10 0 0 0 11 22v-2a8 8 0 0 1-3.9-1.63z"
+                />
+              </svg>
+              Edit
+            </div>
+          </div>
+          <div class="items">
+            <div class="name">
+              <input type="checkbox" id="id-4" />
+              <label for="id-4">Ad Blocker</label>
+            </div>
+            <div class="stat">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M15 4a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6m-1 2h1.5v3.78l2.33 2.33-1.06 1.06L14 12.4zM2 18a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3.83c.31.71.71 1.38 1.17 2zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h2.05L5 12l.05 1zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3c-.46.62-.86 1.29-1.17 2z"
+                />
+              </svg>
+              Pending
+            </div>
+            <div class="author">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M9 10H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2 -7h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2V5a2 2 0 0 0 -2 -2m0 16H5V8h14z"
+                />
+              </svg>
+              poldova
+            </div>
+            <div class="view">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v12h7V6zm16 12V6h-1.24c.24.54.19 1.07.19 1.13-.07.67-.54 1.37-.71 1.62l-2.33 2.55 3.32-.02.01 1.22-5.2-.03-.04-1s3.05-3.23 3.2-3.52c.14-.28.71-1.95-.7-1.95-1.23.05-1.09 1.3-1.09 1.3l-1.54.01s.01-.66.38-1.31H13v12h2.58l-.01-.86.97-.01s.91-.16.92-1.05c.04-1-.81-1-.96-1-.13 0-1.07.05-1.07.87h-1.52s.04-2.06 2.59-2.06c2.6 0 2.46 2.02 2.46 2.02s.04 1.25-1.11 1.72l.52.37zM8.92 16h-1.5v-5.8l-1.8.56V9.53l3.14-1.12h.16z"
+                />
+              </svg>
+              44
+            </div>
+            <div class="date">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 20c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m.5 5v6H7v-1.5h4V7z"
+                />
+              </svg>
+              2024/11/05
+            </div>
+            <div class="edit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m15.84 10.2-1.01 1.01-2.07-2.03 1.01-1.02c.2-.21.54-.22.78 0l1.29 1.25c.21.21.22.55 0 .79M8 13.91l4.17-4.19 2.07 2.08-4.16 4.2H8zM13 2v2c4.39.54 7.5 4.53 6.96 8.92A8.014 8.014 0 0 1 13 19.88v2c5.5-.6 9.45-5.54 8.85-11.03C21.33 6.19 17.66 2.5 13 2m-2 0c-1.96.18-3.81.95-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68v-2M4.26 5.67A9.8 9.8 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8 8 0 0 1 4.06 13zm5 5.37-1.39 1.37A10 10 0 0 0 11 22v-2a8 8 0 0 1-3.9-1.63z"
+                />
+              </svg>
+              Edit
+            </div>
+          </div>
+          <div class="items">
+            <div class="name">
+              <input type="checkbox" id="id-5" />
+              <label for="id-5">Money Maker</label>
+            </div>
+            <div class="stat">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M15 4a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6m-1 2h1.5v3.78l2.33 2.33-1.06 1.06L14 12.4zM2 18a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3.83c.31.71.71 1.38 1.17 2zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h2.05L5 12l.05 1zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3c-.46.62-.86 1.29-1.17 2z"
+                />
+              </svg>
+              Schedule
+            </div>
+            <div class="author">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M9 10H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2 -7h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2V5a2 2 0 0 0 -2 -2m0 16H5V8h14z"
+                />
+              </svg>
+              poldova
+            </div>
+            <div class="view">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v12h7V6zm16 12V6h-1.24c.24.54.19 1.07.19 1.13-.07.67-.54 1.37-.71 1.62l-2.33 2.55 3.32-.02.01 1.22-5.2-.03-.04-1s3.05-3.23 3.2-3.52c.14-.28.71-1.95-.7-1.95-1.23.05-1.09 1.3-1.09 1.3l-1.54.01s.01-.66.38-1.31H13v12h2.58l-.01-.86.97-.01s.91-.16.92-1.05c.04-1-.81-1-.96-1-.13 0-1.07.05-1.07.87h-1.52s.04-2.06 2.59-2.06c2.6 0 2.46 2.02 2.46 2.02s.04 1.25-1.11 1.72l.52.37zM8.92 16h-1.5v-5.8l-1.8.56V9.53l3.14-1.12h.16z"
+                />
+              </svg>
+              0
+            </div>
+            <div class="date">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 20c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m.5 5v6H7v-1.5h4V7z"
+                />
+              </svg>
+              2024/12/01
+            </div>
+            <div class="edit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m15.84 10.2-1.01 1.01-2.07-2.03 1.01-1.02c.2-.21.54-.22.78 0l1.29 1.25c.21.21.22.55 0 .79M8 13.91l4.17-4.19 2.07 2.08-4.16 4.2H8zM13 2v2c4.39.54 7.5 4.53 6.96 8.92A8.014 8.014 0 0 1 13 19.88v2c5.5-.6 9.45-5.54 8.85-11.03C21.33 6.19 17.66 2.5 13 2m-2 0c-1.96.18-3.81.95-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68v-2M4.26 5.67A9.8 9.8 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8 8 0 0 1 4.06 13zm5 5.37-1.39 1.37A10 10 0 0 0 11 22v-2a8 8 0 0 1-3.9-1.63z"
+                />
+              </svg>
+              Edit
+            </div>
+          </div>
+          <div class="items">
+            <div class="name">
+              <form action="" method="post">
+                <input type="checkbox" id="id-6" />
+              </form>
+              <label for="id-6">Super Cool Project</label>
+            </div>
+            <div class="stat">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M15 4a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6m-1 2h1.5v3.78l2.33 2.33-1.06 1.06L14 12.4zM2 18a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3.83c.31.71.71 1.38 1.17 2zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h2.05L5 12l.05 1zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3c-.46.62-.86 1.29-1.17 2z"
+                />
+              </svg>
+              Pending
+            </div>
+            <div class="author">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M9 10H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2 -7h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2V5a2 2 0 0 0 -2 -2m0 16H5V8h14z"
+                />
+              </svg>
+              poldova
+            </div>
+            <div class="view">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 2v12h7V6zm16 12V6h-1.24c.24.54.19 1.07.19 1.13-.07.67-.54 1.37-.71 1.62l-2.33 2.55 3.32-.02.01 1.22-5.2-.03-.04-1s3.05-3.23 3.2-3.52c.14-.28.71-1.95-.7-1.95-1.23.05-1.09 1.3-1.09 1.3l-1.54.01s.01-.66.38-1.31H13v12h2.58l-.01-.86.97-.01s.91-.16.92-1.05c.04-1-.81-1-.96-1-.13 0-1.07.05-1.07.87h-1.52s.04-2.06 2.59-2.06c2.6 0 2.46 2.02 2.46 2.02s.04 1.25-1.11 1.72l.52.37zM8.92 16h-1.5v-5.8l-1.8.56V9.53l3.14-1.12h.16z"
+                />
+              </svg>
+              140
+            </div>
+            <div class="date">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 20c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2m.5 5v6H7v-1.5h4V7z"
+                />
+              </svg>
+              2024/11/05
+            </div>
+            <div class="edit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="m15.84 10.2-1.01 1.01-2.07-2.03 1.01-1.02c.2-.21.54-.22.78 0l1.29 1.25c.21.21.22.55 0 .79M8 13.91l4.17-4.19 2.07 2.08-4.16 4.2H8zM13 2v2c4.39.54 7.5 4.53 6.96 8.92A8.014 8.014 0 0 1 13 19.88v2c5.5-.6 9.45-5.54 8.85-11.03C21.33 6.19 17.66 2.5 13 2m-2 0c-1.96.18-3.81.95-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68v-2M4.26 5.67A9.8 9.8 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8 8 0 0 1 4.06 13zm5 5.37-1.39 1.37A10 10 0 0 0 11 22v-2a8 8 0 0 1-3.9-1.63z"
+                />
+              </svg>
+              Edit
+            </div>
+          </div>
+          <div class="row">
+            <div class="name">
+              <input type="checkbox" id="select" />
+              <label for="select">Select All</label>
+              <div class="action">
+                <select name="action" id="selectaction">
+                  <optgroup label="Select Action">
+                    <option value="delete">Delete</option>
+                    <option value="publish">Publish</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="pagination">
+              <div class="prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path d="M15.41 16.58 10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+                </svg>
+              </div>
+              <div class="choose"><input type="text" value="1" /></div>
+              <div class="next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path d="M8.59 16.58 13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
