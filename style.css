@@ -314,7 +314,7 @@
     .view,
     .date,
     label[for="select"] {
-      display: block !important;
+      display: grid !important;
     }
     .sidebar span,
     .header span,
